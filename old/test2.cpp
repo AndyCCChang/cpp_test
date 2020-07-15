@@ -1,23 +1,16 @@
-// constructing vectors
 #include <iostream>
 #include <vector>
+using namespace std;
 
-int main ()
-{
-  // constructors used in the same order as described above:
-  std::vector<int> first;                                // empty vector of ints
-  std::vector<int> second (4,100);                       // four ints with value 100
-  std::vector<int> third (second.begin(),second.end());  // iterating through second
-  std::vector<int> fourth (third);                       // a copy of third
+int main(void){
 
-  // the iterator constructor can also be used to construct from arrays:
-  int myints[] = {16,2,77,29};
-  std::vector<int> fifth (myints, myints + sizeof(myints) / sizeof(int) );
+    vector<string> vect = {"abc", "def"};
 
-  std::cout << "The contents of fifth are:";
-  for (std::vector<int>::iterator it = fifth.begin(); it != fifth.end(); ++it)
-    std::cout << ' ' << *it;
-  std::cout << '\n';
+    auto v_size = vect[0].size();
+    auto v_length = vect[0].length();
 
-  return 0;
+    cout << v_size << endl;
+    cout << v_length << endl;
+
+
 }

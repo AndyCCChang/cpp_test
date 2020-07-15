@@ -20,7 +20,7 @@ int main (void){
 
     vector<int> vect = {1,2,3, 6, 8, 10};
     auto end = vect.size();
-    int ret = binary_search(vect, 0, end, 2);
+    int ret = binary_search(vect, 0, end, 11);
     for (int i =0; i < vect.size();i++){
         cout << vect[i] << endl;
     }
